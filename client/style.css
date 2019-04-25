@@ -1,0 +1,51 @@
+body{
+	/* background-color: #f2e2d7; */
+	background-image: url('https://cdn11.bigcommerce.com/s-67d81/images/stencil/1024x1024/products/1569/3251/00150_Wooden_Wall_web__13846.1430898113.jpg?c=2');
+}
+.delete {
+	background: tomato;
+	color: white;
+	width: 25px;
+}
+
+.done {
+	background: #f4f4f4;
+}
+
+.done,
+.delete {
+	font-family: sans-serif;
+	height: 25px;
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.extras {
+	float: right;
+}
+
+.task {
+	width:100px;
+	height:50px;
+	margin: 30px;
+	border:solid;
+	padding: 30px;
+	background-color: white;
+
+}
+
+#new_task{
+	width:90%;
+	height:50px;
+	margin: 30px;
+	border:solid;
+	padding: 30px;
+	background-color: white;
+}
+
+input{
+	padding: 20px;
+	width: 50%;
+}

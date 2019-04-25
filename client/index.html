@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="angular.min.js"></script>
+  <title>To do list</title>
+</head>
+<body ng-app="todo" ng-controller="list">
+
+  <div id="content">
+  			<div id="tasks">
+  				<div class="task" id="" ng-repeat="task in tasks">
+  					<span>{{task.name}}</span>
+  					<div class="extras">
+  						<button type="radio" class="done" ng-click="finish_task(task)">Done</button>
+  						<button class="delete" ng-click="delete_task(task)">X</button>
+  					</div>
+  				</div>
+  			</div>
+        <hr> 
+  			<div id="new_task">
+          What are you going to do next:
+          <!-- <form ng-keyup="create_task($event)" ng-model="new_task"> -->
+    				<input type="text" placeholder="to Do Task" ng-keyup="create_task($event)" ng-model="new_task">
+            <!-- <input type="radio" class="finish_task"> -->
+            <!-- <input type="submit"> -->
+          <!-- </form> -->
+        </div>
+  		</div>
+
+
+
+<script src="script.js"> </script>
+</body>
+</html>
